@@ -1,11 +1,39 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: #000000;
+:root {
+  --white: #ffffff;
+  --white-op: #d7ccc0;
+  --lite: #f5f4f0;
+  --main: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --dark-op: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
 
-  /*  Пример подключения изображения из папки  img */
-  background-image: url("../img/bg-promo.png");
-  background-repeat: no-repeat;
-  background-position: center top;
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: var(--dark);
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.title {
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
 }
