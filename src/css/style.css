@@ -47,8 +47,8 @@ h3 {
   padding-top: 100px;
   background-image: url(../img/main.png);
   background-repeat: no-repeat;
-  background-size: 100% 525px;
-  background-position: right -270px top 55px;
+  background-size: auto 525px;
+  background-position: right 200px top 55px;
 }
 
 .header::before {
