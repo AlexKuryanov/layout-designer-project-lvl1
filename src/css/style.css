@@ -101,6 +101,10 @@ h3 {
   margin-right: 0;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .link-btn {
   position: relative;
   margin-left: 180px;
@@ -146,4 +150,57 @@ h3 {
 .navigation {
   margin-top: -100px;
   padding-top: 200px;
+}
+
+.navigation-list {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: auto auto;
+  gap: 20px 30px;
+  align-content: space-around;
+  list-style: none;
+}
+
+.navigation-item {
+  background-color: var(--lite);
+}
+
+.navigation-link {
+  display: block;
+  height: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.navigation-title {
+  font-size: 52px;
+}
+
+.item-number {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: Neucha, sans-serif;
+  font-size: 64px;
+  line-height: 100%;
+  color: var(--main-dark);
+}
+
+.item-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: Neucha, sans-serif;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--main);
+}
+
+.item-description {
+  margin: 0;
+  font-size: inherit;
+  color: var(--dark);
 }
