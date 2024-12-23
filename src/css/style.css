@@ -1,7 +1,7 @@
 :root {
   --white: #ffffff;
   --white-op: #d7ccc0;
-  --lite: #f5f4f0;
+  --light: #f5f4f0;
   --main: #fe8a02;
   --main-dark: #42413c;
   --dark: #2a2626;
@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  width: 1140px;
+  width: 1110px;
   margin: 0 auto;
 }
 
@@ -52,14 +52,15 @@ h3 {
 
 .header {
   position: relative;
-  background-color: var(--lite);
+  background-color: var(--light);
   background-image: url(../img/main.png);
   background-repeat: no-repeat;
   background-size: auto 525px;
-  background-position: right -107px top 55px;
+  background-position: right -207px top 55px;
 }
 
-.header::before {
+.header::after,
+.article::after {
   content: url(../img/background.png);
   position: absolute;
   top: 0;
@@ -163,7 +164,7 @@ h3 {
 }
 
 .navigation-item {
-  background-color: var(--lite);
+  background-color: var(--light);
 }
 
 .navigation-link {
@@ -203,4 +204,106 @@ h3 {
   margin: 0;
   font-size: inherit;
   color: var(--dark);
+}
+
+.article {
+  position: relative;
+}
+
+.section-light {
+  background-color: var(--light);
+}
+
+.section-brown {
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+
+.article-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: 434px;
+}
+
+.section-brown .article-image {
+  order: 2;
+}
+
+.article-image {
+  flex-basis: 48.5%;
+  position: relative;
+  max-width: 100%;
+  vertical-align: bottom;
+  z-index: 1;
+}
+
+.article-kicker {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--dark-op);
+}
+
+.section-brown .article-kicker {
+  color: var(--white-op);
+}
+
+.article-title {
+  flex-shrink: 1;
+  margin: 0;
+  font-size: 60px;
+  color: var(--dark);
+}
+
+.section-brown .article-spoiler,
+.section-brown .article-title {
+  color: var(--white);
+}
+
+.article-spoiler {
+  width: 502px;
+  margin: 0;
+  flex-shrink: 1;
+  font-family: Neucha, sans-serif;
+  font-size: 34px;
+  line-height: 1.2;
+  color: var(--dark);
+}
+
+.article-body {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.article-subtitle {
+  flex: 1 0 100%;
+  margin: 0;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--white);
+  background-color: var(--brown);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.section-brown .article-subtitle {
+  color: var(--brown);
+  background-color: var(--white);
+}
+
+.article-content {
+  margin: 0;
+  flex: 1 1 540px;
 }
