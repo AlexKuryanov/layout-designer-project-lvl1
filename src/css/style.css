@@ -1,4 +1,6 @@
+/* Variables */
 :root {
+  --black: #000000;
   --white: #ffffff;
   --white-op: #d7ccc0;
   --light: #f5f4f0;
@@ -8,8 +10,10 @@
   --dark-op: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
+  --link-color: #007dc1;
 }
 
+/* Global */
 html {
   scroll-behavior: smooth;
 }
@@ -50,6 +54,7 @@ h3 {
   padding-block: 100px;
 }
 
+/* Header */
 .header {
   position: relative;
   background-color: var(--light);
@@ -119,6 +124,7 @@ h3 {
   z-index: 2;
 }
 
+/* Video section */
 .video {
   padding-bottom: 0;
 }
@@ -140,6 +146,7 @@ h3 {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
+/* Navigation */
 .section-dark {
   background-color: var(--main-dark);
 }
@@ -206,6 +213,7 @@ h3 {
   color: var(--dark);
 }
 
+/* Articles */
 .article {
   position: relative;
 }
@@ -306,4 +314,90 @@ h3 {
 .article-content {
   margin: 0;
   flex: 1 1 540px;
+}
+
+/* Footer */
+.footer {
+  color: var(--white);
+  background-color: var(--white);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 122px; */
+  padding: 55px;
+  background-color: var(--dark);
+}
+
+.footer-cta {
+  margin: 0;
+  font-family: Neucha, sans-serif;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.subscribe-form {
+  flex-basis: 485px;
+}
+
+.form-label {
+  display: block;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.form-group {
+  display: flex;
+}
+
+.form-input {
+  width: 415px;
+  height: 50px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: none;
+}
+
+::placeholder {
+  font-size: 13px;
+  opacity: 0.2;
+}
+
+.form-btn {
+  flex: 1 0 70px;
+  margin-left: 0;
+  vertical-align: middle;
+  border: 1px solid var(--main);
+  background-image: url(../img/send.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rules {
+  margin: 0;
+  font-size: 12px;
+}
+
+.rules-link {
+  color: inherit;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 60px;
+  font-size: 14px;
+  color: var(--black);
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-link {
+  color: var(--link-color);
 }
