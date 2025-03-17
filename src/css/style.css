@@ -22,7 +22,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 1.6em;
+  line-height: 1.6;
   color: var(--dark);
 }
 
@@ -35,7 +35,7 @@ body {
   margin: 0;
   font-family: Neucha, sans-serif;
   font-weight: 400;
-  line-height: 1.2em;
+  line-height: 1;
 }
 
 h1 {
@@ -61,7 +61,7 @@ h3 {
   background-image: url(../img/main.png);
   background-repeat: no-repeat;
   background-size: auto 525px;
-  background-position: right -207px top 55px;
+  background-position: right -34px top 45px;
 }
 
 .header::after,
@@ -79,11 +79,12 @@ h3 {
 
 .page-title {
   margin: 0;
-  margin-bottom: 182px;
+  margin-bottom: 188px;
 }
 
 .main-color {
   color: var(--main);
+  line-height: 1.2;
 }
 
 .align-center {
@@ -95,7 +96,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 30px;
-  row-gap: 40px;
+  row-gap: 21px;
 }
 
 .header-text {
