@@ -68,10 +68,8 @@ h3 {
 .article::after {
   content: url(../img/background.png);
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: -9px;
+  left: 72px;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
