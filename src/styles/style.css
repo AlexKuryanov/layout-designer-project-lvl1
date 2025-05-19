@@ -1,7 +1,62 @@
-/** CSS STYLE **/
+/* Variables */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --white-op: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --dark-op: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+  --link-color: #007dc1;
+}
 
-.hello {
-  display: block;
+/* Global */
+html {
+  scroll-behavior: smooth;
+}
 
-  color: #fff;
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 25.6px; /* 160% */
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+.page-header {
+  background-color: var(--light);
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  padding-inline: 165px;
+}
+
+.title {
+  margin: 0;
+  font-weight: 400;
+  font-family: Neucha, sans-serif;
+  line-height: 1.2em;
+}
+
+.page-title {
+  font-size: 72px;
+}
+
+.section-title {
+  font-size: 60px;
+}
+
+.item-title {
+  font-size: 34px;
+}
+
+.pb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
